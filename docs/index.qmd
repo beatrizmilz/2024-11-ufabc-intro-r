@@ -1,0 +1,125 @@
+---
+title: "<img src='logos.png' width = '50%'>Introduction to R"
+subtitle: "PGT-605 - Methods and techniques in territorial planning and management"
+author: "[Dr. Beatriz Milz](https://beamilz.com)"
+date: "2024-11-12"
+date-format: "DD/MM/YYYY"
+format: 
+  revealjs:
+    theme: styles.scss
+    slide-number: c/t
+incremental: false
+code-link: true
+---
+
+## What is...
+
+### R?
+
+R is a free software environment for statistical computing and graphics. (<https://www.r-project.org/>)
+
+### RStudio?
+
+**RStudio** is an IDE (*integrated development environment*) for the R Language.
+
+### RStudio Cloud?
+
+It’s the RStudio IDE that we can use directly from the browser (no installation required).
+
+## Why use programming languages to analyze data? {.middle .center}
+
+## Advantages of analyzing data using programming languages
+
+-   Code is a language, so we can document our analysis
+
+-   Code is text, so we can copy and paste
+
+-   The main programming languages for data science are open source
+
+::: footer
+Slide by [Curso-R](https://curso-r.com/).
+:::
+
+
+## What does it mean to be open source?
+
+1.  Free access.
+
+2.  Everyone can use the best tools regardless of financial power.
+
+3.  Students can use the same tools as professionals.
+
+4.  You can develop your own tools.
+
+5.  Enables an active community to exist.
+
+::: footer
+Slide by [Curso-R](https://curso-r.com/).
+:::
+
+
+## Why R? {.middle .center}
+## Why use R?
+
+-   It’s a programming language with many tools for data analysis
+
+-   It’s *open source*
+
+-   It has an active community of developers
+
+-   It’s flexible, allowing you to develop functions and packages to facilitate work
+
+-   It’s available for free on different platforms: Windows, Linux, and Mac
+
+-   Maintained by the [R Development Core Team](https://cran.r-project.org/)
+
+
+## Data Analysis workflow
+
+![](img/environmental-data-science-r4ds-general.png){fig-align="center"}
+
+::: footer
+Source: Allison Horst (@allison_horst).
+:::
+
+# Let’s get started with R!
+
+## After the class
+
+- `R` and `RStudio` installed on your computer.
+
+- Links for installating:
+  - [R](https://cran.r-project.org/)
+  - [RStudio](https://posit.co/download/rstudio-desktop/)
+
+## During the workshop
+
+- We can use RStudio Cloud: <https://posit.cloud/>
+    
+
+
+# Study Materials (Portuguese)
+
+-   [Livro R para Ciência de Dados (2a Edição)](https://cienciadedatos.github.io/pt-r4ds/)
+
+-   [Material do curso: Introdução à análise de dados no R - Utilizando dados públicos e registros administrativos brasileiros](https://ipeadata-lab.github.io/curso_r_intro_202409/)
+
+-   [Livro Ciência de Dados em R](https://livro.curso-r.com/)
+
+-   [Livro Análises Ecológicas em R](https://analises-ecologicas.netlify.app/)
+
+# Study materials (English)
+
+- [R for Data Science](https://r4ds.hadley.nz/)
+
+## Thank you! {.middle .center}
+
+[<i class="fa fa-envelope"></i> milz.bea\@gmail.com](mailto:milz.bea@gmail.com) 
+
+
+<!-- inicio font awesome -->
+
+```{=html}
+<script src="https://kit.fontawesome.com/1f72d6921a.js" crossorigin="anonymous"></script>
+```
+<!-- final font awesome -->
