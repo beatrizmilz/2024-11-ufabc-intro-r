@@ -45,6 +45,12 @@ read_csv2("data/pnud_min.csv")
 # Let's store the data in a variable called `pnud_data`:
 pnud_data <- read_csv2("data/pnud_min.csv")
 
+library(readr)
+mananciais <- read_csv2("https://raw.githubusercontent.com/beatrizmilz/mananciais/master/inst/extdata/mananciais.csv")
+View(mananciais)
+
+
+
 # Now, let's check the data imported!
 View(pnud_data)
 
@@ -203,7 +209,7 @@ write_csv(summarized_pnud, "data/summarized_pnud.csv")
 # The ggplot2 package is used to create plots in R. It is part of the tidyverse.
 
 # For beginners, it can be easier to use the esquisse package to create plots.
-install.packages("esquisse")
+# install.packages("esquisse")
 
 
 # After installing the package, we can use the `esquisse()` function to create plots.
@@ -215,6 +221,22 @@ pnud_data_2010 <- filter(pnud_data, ano == 2010)
 
 # Start the esquisse interface:
 esquisser(pnud_data_2010)
+
+
+library(ggplot2)
+
+my_plot <- ggplot(pnud_data_2010) +
+ aes(x = espvida) +
+ geom_histogram(bins = 30L, fill = "#4682B4") +
+ labs(x = "Life expectancy (years)", 
+ y = "N. of municipalities",
+ title = "Histogram of life expectancy",
+ subtitle = "2010 Census in Brazil") +
+ theme_minimal() +
+ facet_wrap(vars(regiao_nm))
+
+ggsave(plot = my_plot, filename = "histogram.png")
+
 
 # What is important? Copying the code to the script!
 

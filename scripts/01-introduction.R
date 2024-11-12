@@ -10,6 +10,8 @@
 # - use the `Ctrl + Enter` keyboard shortcut, or
 # - use the `Run` button in the top right corner of the script window.
 
+2 + 1 
+
 
 ## R as a calculator ----
 
@@ -21,11 +23,18 @@
 3 * 4
 10 / 2
 
+# question
+# what [1] in the output means?
+# positiion of the first element in the line!
+letters
+
+letters[19]
+
 ##  Difference between Script and Console  -----
 # We can write code in two places in RStudio:
 # - in the script window (where we write our code), and
 # - in the console window (where we see the output of our code).
-
+ 
 # If it's something we want to keep, we should write it in the script window,
 # and save the file.
 
@@ -38,14 +47,22 @@
 # Convert the temperature from Celsius to Fahrenheit, 
 # using the following formula: `TempF =  TempC * 1.8 + 32`:
 
+# 19o C
+(19 * 1.8) + 32
 
+# { [ ( )]}
 
+# ( ( ( )))
 
 ## Variables ----
 
 # We can store values in variables. This way, we can use them later in our code.
 
 # To assign a value to a variable, we use the assignment operator `<-`.
+
+# shortcut: ALT -
+
+# <- <- <- <- <- <- <- <- <- <- <- <- <- <- <- <- <- <- 
 
 # For example, let's store the value 31 in a variable called `age`:
 
@@ -55,9 +72,24 @@ age <- 31
 
 age
 
-## Exercise: Create a variable `current_year` and store the current year in it: --- 
+# 
+AGE
+
+# age != Age != AGE != ....
+
+my_name_is <- "Beatriz" 
+# MyNameIs
 
 
+
+
+## Exercise: Create a variable `current_year` and store the
+# current year in it: --- 
+
+# Shortcut for assignment operator: alt -
+# <- 
+
+current_year <- 2024
 
 # We can also perform operations with variables:
 
@@ -94,7 +126,7 @@ Sys.Date()
 height <- 1.75
 
 # Integer:
-age <- 31
+age <- 31L
 
 # Character:
 
@@ -114,8 +146,12 @@ birth_date <- as.Date("1993-02-15")
 
 # For example, let's check the data type of the variable `birth_date`:
 class(birth_date)
+class("1993-02-15")
 
 ## Exercise: Creating variables ---------------
+
+
+
 
 # 1. Create a variable called "birth_year" and store your birth year in it.
 
@@ -136,6 +172,10 @@ city_born <- "Diadema"
 is_veg <- "FALSE"
 
 
+
+height + 1
+as.numeric(height) + 1
+
 ## Types of data structures ----
 
 # In R, we can store multiple values in a single object.
@@ -152,6 +192,12 @@ is_veg <- "FALSE"
 
 # For example, let's create a vector with the name of our favorite fruits:
 bea_fruits <- c("banana", "watermelon", "grapes")
+
+c("banana", 31, TRUE)
+
+
+# BREAK 15H45
+
 
 # Exercise: Create a vector with the name of your favorite fruits,
 # and store it in a variable called `my_fruits`:
@@ -181,7 +227,7 @@ mtcars
 # We can install a package using the `install.packages()` function.
 
 # For example, let's install the `tidyverse` package:
-install.packages("tidyverse")
+# install.packages("tidyverse")
 
 # After installing a package, we need to load it using the `library()` function:
 library(tidyverse)
